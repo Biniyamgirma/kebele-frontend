@@ -6,14 +6,15 @@
   ],
   "compilerOptions": {
     "baseUrl": ".",
+    "lib": ["ES2020", "DOM"],
     "paths": {
       "@/*": ["./src/*"]
     },
-  "noImplicitAny": false,
-  "noUnusedParameters": false,
-  "skipLibCheck": true,
-  "allowJs": true,
-  "noUnusedLocals": false,
-  "strictNullChecks": false,
+    "noImplicitAny": false,
+    "noUnusedParameters": false,
+    "skipLibCheck": true,
+    "allowJs": true,
+    "noUnusedLocals": false,
+    "strictNullChecks": false
   }
 }
