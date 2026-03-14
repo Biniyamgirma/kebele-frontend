@@ -9,17 +9,13 @@ interface Props {
 const AdminHeader: React.FC<Props> = ({ adminName, onLogout }) => {
   return (
     <div className="flex w-screen justify-between items-center h-12 bg-[#1a4331]/95 text-white px-12 my-8">
-      <h1 className="text-sm md:text-xl">
-        እንኳን ወደ ድህረገጽ ማስተዳደሪያ በሰላም መጡ
-      </h1>
+      <h1 className="text-sm md:text-xl">እንኳን ወደ ድህረገጽ ማስተዳደሪያ በሰላም መጡ</h1>
 
       <div className="flex items-center space-x-4">
-        <p className="text-sm md:text-lg">
-          ዋና አስተዳዳሪ: {adminName}
-        </p>
+        <p className="text-sm md:text-lg text-nowrap">ዋና አስተዳዳሪ: {adminName}</p>
         <button
           onClick={onLogout}
-          className="rounded-sm py-2 px-3 bg-white text-black hover:bg-white/90"
+          className="rounded-sm md:py-2 md:px-3 text-nowrap py-1 px-4 bg-white text-black hover:bg-white/90"
         >
           Log out
         </button>

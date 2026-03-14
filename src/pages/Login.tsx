@@ -50,9 +50,9 @@ function Login() {
           <img
             src="images/logo.webp"
             alt="Amhara Regional Government Debereberhan Kebele Etege Taytu subcity website"
-            className="mx-auto h-20 w-auto rounded-full"
+            className="mx-auto h-20 md:h-20 w-auto rounded-full"
           />
-          <h2 className="mt-10 text-center text-2xl/9 font-bold tracking-tight text-white">
+          <h2 className="mt-4 md:mt-10 text-center text-xl/9 font-bold tracking-tight text-white">
             እንኳን ወደ ደብረብርሃን ከተማ አስተዳደር እቴጌ ጣይቱ ክፍለከተማ ሸዋረገድ ገድል ቀበሌ ድህረገጽ
             ማስተዳደሪያ በደህና መጡ
           </h2>
@@ -60,7 +60,7 @@ function Login() {
         <div className="w-full flex justify-center items-center">
           {loading ? <WifiLoaderComponent /> : ""}
         </div>
-        <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+        <div className="mt-2 sm:mx-auto sm:w-full sm:max-w-sm">
           <form action="#" className="space-y-6" onSubmit={handlLogIn}>
             <div>
               <label
