@@ -17,7 +17,7 @@ import UploadImage from "@/components/admin/UploadImage";
 import defaultImage from "/images/image-6.jpg";
 import { Link } from "react-router-dom";
 import { WifiLoaderComponent } from "@/components/ui/WifiLoaderComponent";
-import { redirect } from "react-router";
+import { useNavigate } from "react-router-dom";
 const base_url = import.meta.env.VITE_BASE_URL;
 
 function Admin() {
@@ -32,6 +32,7 @@ function Admin() {
   const [newsLoader, setNewsLoader] = useState(false);
   const [trigger, setTrigger] = useState(false);
 
+  const navigate = useNavigate();
   const [name, setName] = useState(() => {
     const saved = localStorage.getItem("first_name");
     // Check if the value exists and handle it appropriately
@@ -47,7 +48,10 @@ function Admin() {
   });
   const handleLogout = () => {
     localStorage.removeItem("jwtToken");
-    throw redirect("/login");
+    localStorage.removeItem("first_name");
+    localStorage.removeItem("last_name");
+    localStorage.removeItem("id");
+    navigate("/login");
   };
 
   useEffect(() => {
