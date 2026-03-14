@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
-import axios from "axios";
 import api from "@/lib/api";
 function UploadImage() {
   const [title, setTitle] = useState("");
@@ -37,7 +36,6 @@ function UploadImage() {
       await api.post("/news", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
-
       alert("Uploaded successfully");
       setTitle("");
       setSubHeading("");
@@ -48,7 +46,6 @@ function UploadImage() {
       console.error(err);
     }
   };
-
   return (
     <>
       <div className="flex w-screen justify-between items-center h-12 bg-[#1a4331]/95 text-white px-12 my-8">
@@ -64,7 +61,6 @@ function UploadImage() {
           alt="Preview"
           className={cn("w-full h-80 object-cover mb-4", no_image && "hidden")}
         />
-
         <form onSubmit={handleSubmit}>
           <div className="w-full mb-4 border border-default-medium rounded-base bg-primary/10 rounded-2xl shadow-xs my-4 border-b-2 border-primary">
             {/* TITLE */}

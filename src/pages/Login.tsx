@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { WifiLoaderComponent } from "@/components/ui/WifiLoaderComponent";
 import api from "@/lib/api";
@@ -22,8 +21,6 @@ function Login() {
         firstName,
         password,
       });
-
-      console.log(response.data);
       if (response.data.token) {
         localStorage.setItem("jwtToken", response.data.token);
         localStorage.setItem("first_name", response.data.userFirstName);
@@ -46,7 +43,6 @@ function Login() {
     }
     setLoading(false);
   };
-
   return (
     <section className="flex justify-center items-center min-h-screen max-w-screen overflow-clip bg-primary">
       <div className="flex w-[70vw] md:w-[40vw]  mx-auto flex-col justify-center px-6 py-12 lg:px-8 border-2 h-[90vh] border-gray-500 rounded-2xl shadow drop-shadow-white">

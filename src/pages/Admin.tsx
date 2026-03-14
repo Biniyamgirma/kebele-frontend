@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Calendar, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { cn } from "@/lib/utils";
 import Switch from "@/components/ui/Switch";
-import dateTimeConverter from "@/lib/ethiopian_date_time_converter";
-import { EthDateTime } from "ethiopian-calendar-date-converter";
-import { format } from "date-fns";
 import {
   Card,
   CardContent,
@@ -16,7 +12,6 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/admin/Header";
-import axios from "axios";
 import api from "@/lib/api";
 import UploadImage from "@/components/admin/UploadImage";
 import defaultImage from "/images/image-6.jpg";

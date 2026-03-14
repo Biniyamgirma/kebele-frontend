@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Header } from "../Header";
 import { useParams } from "react-router-dom";
@@ -61,7 +60,7 @@ function Edit() {
       setUpdateLoading(true);
       setUpdateError("");
 
-      await api.put("http://localhost:8080/editNews", formData, {
+      await api.put("/editNews", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 
