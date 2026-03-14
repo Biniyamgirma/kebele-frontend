@@ -1,23 +1,32 @@
-import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Youtube, Send, Flower2, Phone, Mail } from 'lucide-react';
-import { useLanguage } from '@/contexts/LanguageContext';
+import { Link } from "react-router-dom";
+import {
+  Facebook,
+  Twitter,
+  Youtube,
+  Send,
+  Flower2,
+  Phone,
+  Mail,
+} from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export const Footer = () => {
   const { t } = useLanguage();
 
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Send, href: '#', label: 'Telegram' },
-    { icon: Youtube, href: '#', label: 'YouTube' },
+    { icon: Facebook, href: "#", label: "Facebook" },
+    { icon: Twitter, href: "#", label: "Twitter" },
+    { icon: Send, href: "#", label: "Telegram" },
+    { icon: Youtube, href: "#", label: "YouTube" },
   ];
 
   const quickLinks = [
-    { path: '/', label: t('nav.home') },
-    { path: '/about', label: t('nav.about') },
-    { path: '/services', label: t('nav.services') },
-    { path: '/news', label: t('nav.news') },
-    { path: '/contact', label: t('nav.contact') },
+    { path: "/", label: t("nav.home") },
+    { path: "/about", label: t("nav.about") },
+    { path: "/services", label: t("nav.services") },
+    { path: "/news", label: t("nav.news") },
+    { path: "/contact", label: t("nav.contact") },
+    { path: "/login", label: t("nav.admin") },
   ];
 
   return (
@@ -28,17 +37,19 @@ export const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-                <img src="/images/logo.webp" alt="Amhara Region Logo"  />
+                <img src="/images/logo.webp" alt="Amhara Region Logo" />
               </div>
-              <span className="text-lg font-bold text-primary">ሸዋረገድ ገድሌ ቀበሌ</span>
+              <span className="text-lg font-bold text-primary">
+                ሸዋረገድ ገድሌ ቀበሌ
+              </span>
             </div>
             <p className="text-sm text-muted-foreground">
-              {t('hero.description')}
+              {t("hero.description")}
             </p>
             <div className="space-y-2 text-sm">
               <div className="flex items-center space-x-2 text-muted-foreground">
                 <Phone className="h-4 w-4" />
-                <span>{t('footer.helpline')}</span>
+                <span>{t("footer.helpline")}</span>
               </div>
               <div className="flex items-center space-x-2 text-muted-foreground">
                 <Mail className="h-4 w-4" />
@@ -50,7 +61,7 @@ export const Footer = () => {
           {/* Quick Links */}
           <div>
             <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-foreground">
-              {t('footer.quickLinks')}
+              {t("footer.quickLinks")}
             </h3>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
@@ -69,7 +80,7 @@ export const Footer = () => {
           {/* Social Media */}
           <div>
             <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-foreground">
-              {t('footer.followUs')}
+              {t("footer.followUs")}
             </h3>
             <div className="flex space-x-3">
               {socialLinks.map((social) => (
@@ -87,10 +98,10 @@ export const Footer = () => {
           {/* Location */}
           <div>
             <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-foreground">
-              {t('footer.location')}
+              {t("footer.location")}
             </h3>
             <p className="text-sm text-muted-foreground">
-              {t('contact.address.text')}
+              {t("contact.address.text")}
             </p>
           </div>
         </div>
@@ -111,8 +122,12 @@ export const Footer = () => {
 
         {/* Copyright */}
         <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
-          <a href="https://lomify.com.et/" className='hidden'><p>{t('footer.copyright')}</p></a> 
-         <a href=""><p>{t('footer.copyright')}</p></a> 
+          <a href="https://lomify.com.et/" className="hidden">
+            <p>{t("footer.copyright")}</p>
+          </a>
+          <a href="">
+            <p>{t("footer.copyright")}</p>
+          </a>
         </div>
       </div>
     </footer>

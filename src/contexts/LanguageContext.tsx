@@ -11,6 +11,7 @@ interface LanguageContextType {
 const translations: Record<Language, Record<string, string>> = {
   en: {
     // Navigation
+    "nav.admin": "Admin",
     "nav.home": "Home",
     "nav.about": "About Us",
     "nav.services": "Services",
@@ -122,6 +123,7 @@ const translations: Record<Language, Record<string, string>> = {
   },
   am: {
     // Navigation
+    "nav.admin": "አስተዳዳሪ",
     "nav.home": "መነሻ",
     "nav.about": "ስለ እኛ",
     "nav.services": "አገልግሎቶች",
