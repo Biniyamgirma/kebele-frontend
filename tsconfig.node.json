@@ -6,7 +6,7 @@
     "types": [],
     "skipLibCheck": true,
     "allowJs": true,
-
+    "incremental": true,
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
