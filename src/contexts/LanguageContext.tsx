@@ -118,7 +118,7 @@ const translations: Record<Language, Record<string, string>> = {
     "footer.followUs": "Follow Us",
     "footer.location": "Our Address",
     "footer.copyright":
-      "© 2018 E.C Debre Birhan Etege Taitou Sub-city Shewareged Gedele Kebele, Ethiopia. Developed by Biniyam Girma and Kirubel Asefa if you have and digital produt want to be developed contact us on 0928259867",
+      "© 2018 E.C Debre Birhan Etege Taitou Sub-city Shewareged Gedele Kebele, Ethiopia. Developed by Biniyam Girma and Kirubel Asefa if you have and digital produt want to be developed contact us on 0928259867 / 0970657464",
     "footer.helpline": "Helpline: +251-11-XXX-XXXX",
   },
   am: {
@@ -226,7 +226,7 @@ const translations: Record<Language, Record<string, string>> = {
     "footer.followUs": "ተከተሉን",
     "footer.location": "የእኛ አድራሻ",
     "footer.copyright":
-      "© 2018 E.C ደብረብርሀን እቴጌ ጣይቱ ክፍለ ከተማ ሸዋረገድ ገድሌ ቀበሌ, ኢትዮጵያ። በ ቢኒያም ግርማ እና ኪሩበል አሰፋ የተሰራ (0928259867)።",
+      "© 2018 E.C ደብረብርሀን እቴጌ ጣይቱ ክፍለ ከተማ ሸዋረገድ ገድሌ ቀበሌ, ኢትዮጵያ። በ ቢኒያም ግርማ እና ኪሩበል አሰፋ የተሰራ (0928259867 / 0970657464)።",
     "footer.helpline": "የእገዛ መስመር: +251-11-XXX-XXXX",
   },
 };
