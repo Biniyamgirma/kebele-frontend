@@ -17,6 +17,7 @@ import UploadImage from "@/components/admin/UploadImage";
 import defaultImage from "/images/image-6.jpg";
 import { Link } from "react-router-dom";
 import { WifiLoaderComponent } from "@/components/ui/WifiLoaderComponent";
+import { redirect } from "react-router";
 const base_url = import.meta.env.VITE_BASE_URL;
 
 function Admin() {
@@ -46,7 +47,7 @@ function Admin() {
   });
   const handleLogout = () => {
     localStorage.removeItem("jwtToken");
-    window.location.href = "/login";
+    redirect("/login");
   };
 
   useEffect(() => {

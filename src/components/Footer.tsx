@@ -1,13 +1,5 @@
 import { Link } from "react-router-dom";
-import {
-  Facebook,
-  Twitter,
-  Youtube,
-  Send,
-  Flower2,
-  Phone,
-  Mail,
-} from "lucide-react";
+import { Facebook, Twitter, Youtube, Send, Phone, Mail } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 export const Footer = () => {
