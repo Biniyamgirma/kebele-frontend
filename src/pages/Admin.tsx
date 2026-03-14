@@ -47,7 +47,7 @@ function Admin() {
   });
   const handleLogout = () => {
     localStorage.removeItem("jwtToken");
-    redirect("/login");
+    throw redirect("/login");
   };
 
   useEffect(() => {
