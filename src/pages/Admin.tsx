@@ -34,14 +34,16 @@ function Admin() {
 
   const navigate = useNavigate();
   const [name, setName] = useState(() => {
-    const saved = localStorage.getItem("first_name");
+    const first_name = localStorage.getItem("first_name");
+    const last_name = localStorage.getItem("last_name");
+
     // Check if the value exists and handle it appropriately
-    if (saved) {
+    if (first_name && last_name) {
       try {
         // Try to parse as JSON first (in case it was stored with JSON.stringify)
-        return JSON.parse(saved);
+        return JSON.parse(first_name) + " " + JSON.parse(last_name);
       } catch {
-        return saved;
+        return first_name + " " + last_name;
       }
     }
     return "";
