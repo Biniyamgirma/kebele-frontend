@@ -24,7 +24,7 @@ function Login() {
       if (response.data.token) {
         localStorage.setItem("jwtToken", response.data.token);
         localStorage.setItem("first_name", response.data.userFirstName);
-        localStorage.setItem("last_name", response.data.userFirstName);
+        localStorage.setItem("last_name", response.data.userFirstLname || " ");
         localStorage.setItem("id", response.data.id);
 
         api.defaults.headers.common["Authorization"] =
