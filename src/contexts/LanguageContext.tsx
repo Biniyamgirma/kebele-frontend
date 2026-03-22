@@ -22,7 +22,7 @@ const translations: Record<Language, Record<string, string>> = {
       "Welcome to the Debre Birhan Etege Taitu Sub-city Shewareged Gedele Kebele Website",
     "hero.subtitle": "Service Announcement Charter",
     "hero.description":
-      "Resident meeting day: Monday & Wednesday - Social court service: Monday and Friday from 7:30 to 11:30",
+      "You can get information from this website about Debre Birhan Etege Taitu Sub-city Shewareged Gedele Kebele government services 24/7",
     "hero.search": "Search for service (e.g.: lost ID, submit complaint...)",
     "hero.searchBtn": "Search",
 
@@ -134,7 +134,7 @@ const translations: Record<Language, Record<string, string>> = {
     "hero.title": "እንኳን ወደ ደብረብርሀን እቴጌ ጣይቱ ክፍለ ከተማ ሸዋረገድ ገድሌ ቀበሌ ድህረገጽ በደህና መጡ",
     "hero.subtitle": "አግልግሎት አሰጣጥ ማሳወቂያ ቻርተር",
     "hero.description":
-      "የባለጉዳይ ማስታናገጃ ቀን፡ ሰኞ ረቡዕ፤አርበ -የቀጠና ቀን፡ ማስክኞ እና ሀሙስ -የማህበራዊ ፍ/ቤት አገልግሎት ሰኞ እና አርብ ከ7፡30 እስከ 11፡30",
+      "የባለጉዳይ ማስታናገጃ ቀን፡ ሰኞ እስከ ቅዳሜ በ ሰራ ሰዐት ስለ ምንሰጣቸው አገልግሎቶች በ ቀን ለ 24 ሰዐት በ ሳምንት 7 ቀን ከዚህ ድህረገጽ ማግኘት ይችላሉ።",
     "hero.search": "አገልግሎት ፈልግ (ለምሳሌ፡ የጠፋ መታወቂያ፣ ቅሬታ ማቅረብ...)",
     "hero.searchBtn": "ፈልግ",
 
